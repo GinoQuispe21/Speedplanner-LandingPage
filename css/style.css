@@ -4,7 +4,7 @@
 
 /*---Global Css---*/
 :root{
-    --main-color: #7857fe;
+    --main-color: #30B18B;
     --color-1: #e91e63;
     --color-2: #f5ae10;
     --color-3: #09d69c;
@@ -138,6 +138,7 @@ ul{
     min-height: 100vh;
     padding: 150px 0;
     background-color: var(--main-to-dark-color);
+    border-radius: 0 0 200px 0;
 }
 .home-text h1{
     font-size: 45px;
@@ -201,4 +202,60 @@ ul{
     top: 30px;
     transform-origin: 170px 170px;
     animation: spin_01 10s linear infinite;
+}
+
+/*---Video Popup---*/
+.video-popup{
+    padding: 30px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1999;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s ease;
+}
+
+.video-popup.open{
+    opacity: 1;
+    visibility: visible;
+}
+
+.video-popup-inner{
+    width: 100%;
+    max-width: 900px;
+    position: relative;
+}
+
+.video-popup .video-popup-close{
+    position: absolute;
+    right: 0;
+    top: -30px;
+    height: 30px;
+    width: 30px;
+    font-size: 16px;
+    text-align: center;
+    line-height: 30px;
+    color : #ffffff;
+}
+
+.video-popup .iframe-box{
+    height: 0;
+    overflow: hidden;
+    padding-top: 56.25%;
+}
+
+.video-popup #player-1{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
 }
