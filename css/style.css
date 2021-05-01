@@ -5,9 +5,9 @@
 /*---Global Css---*/
 :root{
     --main-color: #30B18B;
-    --color-1: #e91e63;
-    --color-2: #f5ae10;
-    --color-3: #09d69c;
+    --color-1: #f87575;
+    --color-2: #f2c14e;
+    --color-3: #8377d1;
     --bg-dark: #2b2c2f;
     --main-to-dark-color: var(--main-color);
     --dark-to-main-color: var(--bg-dark);
@@ -105,11 +105,32 @@ ul{
     font-weight: 700;
     text-transform: capitalize;
     text-align: center;
+    margin: 0;
 }
 .section-title h2 span{
     color: var(--main-color);
 }
 
+.owl-carousel h2 span{
+    color: var(--main-color);
+}
+
+.owl-carousel .owl-dots{
+    padding: 0 15px;
+    text-align: center;
+    margin-top: 20px;
+}
+.owl-carousel button.owl-dot{
+    height: 6px;
+    width: 24px;
+    background-color: #dddddd;
+    display: inline-block;
+    margin: 0 4px;
+    border-radius: 5px;
+}
+.owl-carousel button.owl-dot.active{
+    background-color: var(--main-color);
+}
 /*---Navbar---*/
 .navbar{
     background-color: var(--main-color);
@@ -195,6 +216,7 @@ ul{
     max-width: 250px;
     width: 100%;
     box-shadow: var(--shadow-black-100);
+    border-radius: 32px;
     animation: bounceTop_01 3s ease infinite;
 }
 .home-img .circle{
@@ -285,8 +307,48 @@ ul{
     padding: 30px;
     border-radius: 10px;
     text-align: center;
-    
+    position: relative;  
+    z-index: 1;
+    overflow: hidden;
 }
+
+.features .feature-item::before,
+.features .feature-item::after{
+    content: '';
+    position: absolute;
+    z-index: -1;
+    border-radius: 50%;
+    transition: all 0.5s ease;
+    opacity: 0;
+}
+
+.features .feature-item::before{
+    height: 20px;
+    width: 20px;
+    background-color: var(--color-1);
+    left: -20px;
+    top: 40%;
+}
+
+.features .feature-item:hover:before{
+    left: 10px;
+    opacity: 1;
+}
+
+.features .feature-item::after{
+    height: 30px;
+    width: 30px;
+    background-color: var(--color-2);
+    right: -30px;
+    top: 80%;
+}
+
+.features .feature-item:hover::after{
+    opacity: 1;
+    right: -15px;
+}
+
+
 .features .feature-item .icon{
     height: 60px;
     width: 60px;
@@ -337,4 +399,74 @@ ul{
     font-weight: 300;
     color: var(--black-400);
     margin: 0 0 15px;
+}
+
+/*---Fun Facts Section ---*/
+.fun-facts{
+    background-color: var(--black-100);
+}
+.fun-facts .section-title{
+    margin-bottom: 20px;
+}
+.fun-facts .section-title h2{
+    text-align: left;
+}
+.fun-facts-img img{
+    max-width: 250px;
+    width: 100%;
+    box-shadow: var(--shadow-black-100);
+    border-radius: 32px;
+    animation: bounceTop_01 3s ease infinite;
+}
+.fun-facts-text p{
+    font-size: 16px;
+    line-height: 26px;
+    color: var(--black-400);
+    margin: 0 0 15px;
+    font-weight: 300;
+}
+.fun-fact-item h3{
+    font-size: 40px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 0 5px;
+}
+.fun-fact-item span{
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-top: 0;
+    line-height: 26px;
+    display: block;
+    color: #ffffff;
+}
+.fun-fact-item{
+    padding: 30px;
+    text-align: center;
+    box-shadow: var(--shadow-black-100);
+    border-radius: 10px; 
+    margin-top: 20px;
+}
+.fun-fact-item.styles-1{
+    background-color: var(--color-1);
+}
+.fun-fact-item.styles-2{
+    background-color: var(--color-2);
+}
+.fun-fact-item.styles-3{
+    background-color: var(--color-3);
+}
+.fun-fact-item.styles-4{
+    background-color: var(--main-color);
+}
+
+/*--- App Screenshots Section---*/
+.screenshot-item{
+    margin:15px;
+}
+.screenshot-item img{
+    width: 100%;
+    max-width: 250px;
+    display: block;
+    margin:auto;
 }
