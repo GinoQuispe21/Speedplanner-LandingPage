@@ -60,6 +60,25 @@ ul{
     color:#ffffff;
     background-color: var(--main-color);
 }
+.btn-2{
+    background-color: var(--main-color);
+    padding: 12px 30px;
+    border: none;
+    border-radius: 30px;
+    color: #ffffff;
+    font-size: 16px;
+    text-transform: capitalize;
+    transition: all 0.5s ease;
+    box-shadow: var(--shadow-black-100);
+    font-weight: 500;
+}
+.btn-2:focus{
+    box-shadow: var(--shadow-black-100);
+}
+.btn-2:hover{
+    color: var(--main-color);
+    background-color: #ffffff;
+}
 @keyframes spin_01{
     0%{
         transform: rotate(0deg);
@@ -469,4 +488,276 @@ ul{
     max-width: 250px;
     display: block;
     margin:auto;
+}
+
+/*---App Download Section ---*/
+.app-download{
+    background-image: url('../img/download-app-bg.jpg');
+    background-position: center top;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+}
+.app-download .section-title h2{
+    color:#ffffff;
+}
+.app-download::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: var(--main-to-dark-color);
+    opacity: 0.5;
+}
+.app-download-item{
+    background-color: var(--black-000);
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: var(--shadow-black-100);
+}
+.app-download-item i{
+    font-size: 30px;
+    color: var(--main-color);
+    display: inline-block;
+}
+.app-download-item h3{
+    font-size: 22px;
+    color: var(--black-900);
+    margin: 20px 0;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.app-download-item p{
+    font-size: 16px;
+    color: var(--black-400);
+    font-weight: 300;
+    margin: 0 0 30px;
+    line-height: 26px;
+}
+/*---How it works section---*/
+.how-it-works-item{
+    /*box-shadow: var(--shadow-black-100);*/
+    text-align: center;
+    padding: 30px;
+    position: relative;
+    z-index: 1;
+}
+.how-it-works-item.line-right::before{
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    left: 50%;
+    top:59px;
+    background-color: var(--main-color);
+    z-index: -1;
+}
+.how-it-works-item .step{
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    background-color: var(--main-color);
+    font-synthesis: 30px;
+    text-align: center;
+    line-height: 60px;
+    border-radius: 50%;
+    color: #ffffff;
+    font-weight: 500;
+}
+.how-it-works-item h3{
+    margin:20px 0;
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--black-900);
+    text-transform: capitalize;
+}
+.how-it-works-item p{
+    font-size: 16px;
+    font-weight: 300;
+    margin: 0;
+    color: var(--black-400);
+    line-height: 26px;
+}
+/*--Pricin Section--*/
+.pricing{
+    background-color: var(--black-100);
+}
+
+.pricing-plan{
+    box-shadow: var(--shadow-black-100);
+    border-radius: 10px;
+}
+
+.pricing-plan .pricing-header{
+    border-bottom: 1px solid #e0dcdc;
+    padding: 20px 30px;
+}
+.pricing-plan .pricing-header h3{
+    text-align: center;
+    font-size: 30px;
+    color: var(--black-900);
+    font-weight: 500;
+    text-transform: capitalize;
+    margin: 0;
+}
+.pricing-plan .pricing-price{
+    padding: 40px 30px;
+    display: flex;
+    justify-content: center;
+    line-height: 0.7;
+}
+.pricing-plan .pricing-price .currency{
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--black-400);
+    margin-right: 5px;
+    align-self: flex-start;
+}
+.pricing-plan .pricing-price .price{
+    font-size: 80px;
+    font-weight: 700;
+    color: var(--main-color)
+}
+.pricing-plan .pricing-price .period{
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--black-400);
+    margin-right: 50px;
+    align-self: flex-end;
+    text-transform: uppercase;
+}
+
+.pricing-plan .pricing-body{
+    padding: 0 30px;
+}
+.pricing-plan .pricing-body ul li{
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--black-400);
+    padding: 10px 0 10px 30px;
+    border-bottom: 1px solid #c8c5c5;
+    line-height: 26px;
+    position: relative;
+}
+.pricing-plan .pricing-body ul li:last-child{
+    border-bottom: none;
+}
+.pricing-plan .pricing-body ul li i{
+    color: var(--main-color);
+    position: absolute;
+    left: 0;
+    top: 12px;
+}
+.pricing-plan .pricing-footer{
+    padding: 20px 30px;
+    text-align: center;
+}
+
+/*--Contact Section -*/
+.contact{
+    color: #ffffff;
+    background-color: var(--main-color);
+}
+.contact-info h3{
+    font-size: 22px;
+    color: var(--black-alpha-900);
+    font-weight: 500;
+    margin: 0 0 40px;
+}
+.contact-info-item{
+    position: relative;
+    padding-left: 55px;
+    margin-bottom: 30px;
+}
+.contact-info-item i{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    left: 0;
+    top: 0;
+    border-radius: 50%;
+    font-size: 16px;
+    border: 1px solid #ffff;
+    text-align: center;
+    line-height: 38px;
+
+}
+.contact-info-item h4{
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0 0 10px;
+}
+.container-info-item p{
+    font-size: 16px;
+    font-weight: 300;
+    margin: 0;
+    line-height: 26px;
+}
+.contact-form .form-group{
+    margin-bottom: 25px;
+}
+.contact-form .form-control{
+    height: 52px;
+    border: 1px solid transparent;
+    box-shadow: var(--shadow-black-100);
+    border-radius: 30px;
+    padding: 0 24px;
+    color: var(--black-900);
+    background-color: var(--black-000);
+    transition: all 0.5s ease;
+}
+.contact-form textarea.form-control{
+    height: 140px;
+    padding-top: 12px;
+}
+.contact-form .form-control:focus{
+    border-color: var(--black-900)
+}
+/*--Footer--*/
+.footer{
+    background-color: var(--bg-dark);
+    padding: 50px;
+}
+.footer-col h3{
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+    margin: 0 0 25px;
+    text-transform: capitalize;
+}
+.footer-col h4{
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+    margin: 0 0 25px;
+}
+.footer-col p{
+    font-size: 16px;
+    color: rgba(255, 255 ,255 ,0.9);
+    font-weight: 300;
+    line-height: 26px;
+    margin: 0;
+}
+.footer-col ul{
+    margin: 0;
+}
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+.footer-col ul li a{
+    font-size: 16px;
+    color: rgba(255, 255 ,255 ,0.9);
+    font-weight: 300;
+    display: block;
+    text-transform: capitalize;
+    transition: all 0.5s ease;
+    text-decoration: none;
+}
+.footer-col ul li a:hover{
+    padding-left: 5px;
 }

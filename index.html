@@ -28,19 +28,22 @@
       <div class="collapse navbar-collapse" id="collapsibleNavbar">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link active" href="#">Home</a>
+            <a class="nav-link active" data-scroll-nav="0" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Features</a>
+            <a class="nav-link" data-scroll-nav="1" href="#">Features</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Screenshots</a>
+            <a class="nav-link" data-scroll-nav="2" href="#">Screenshots</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Pricing</a>
+            <a class="nav-link" data-scroll-nav="3" href="#">Download</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" data-scroll-nav="4" href="#">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-scroll-nav="5" href="#">Contact</a>
           </li>
         </ul>
       </div>
@@ -49,7 +52,7 @@
 <!--Navbar end-->
 
 <!--Home Section Start-->
-<section class="home d-flex align-items-center">
+<section class="home d-flex align-items-center" data-scroll-index="0">
   <!---- More effects for home screen -> Add when finished the other fetures
   <div class="effect-wrap">
     <i class="fas fa-plus effect effect-1"></i>
@@ -62,9 +65,9 @@
       <div class="col-md-7">
         <div class="home-text">
           <h1> La mejor aplicacion mobil para organizar tus tareas!</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipiscing elit, luctus fermentum nullam rhoncus faucibus vel, montes volutpat nibh nec venenatis blandit. Pharetra suspendisse montes nostra platea egestas aenean netus ligula facilisis, luctus conubia etiam eget lectus blandit natoque nisi phasellus fusce, velit nulla felis est dui orci vestibulum turpis. </p>
+          <p>Speedplaner ha sido desarrollado para ayudar a los estudiantes de centros educativos a organizarse y poder mostrar su máximo nivel académico aprovechando mejor sus tiempos. ¡Todo esto con una interfaz amigable y simple de entender!</p>
           <div class="home-btn">
-            <a href="#" class="btn btn-1">Download app</a>
+            <a href="#" data-scroll-goto="3" class="btn btn-1">Descargar</a>
             <button type="button" class="btn btn-1 video-play-btn">
               <i class="fas fa-play"></i>
             </button>
@@ -84,12 +87,12 @@
 <!--Home Section End-->
 
 <!--Feature section start-->
-<section class="features section-padding">
+<section class="features section-padding" data-scroll-index="1">
   <div class="container">
       <div class="row justify-content-center">
         <div class="col-lg-8">
           <div class="section-title">
-            <h2>awesome <span>features</span></h2>
+            <h2>Increibles <span>funcionalidades</span></h2>
           </div>
         </div>
       </div>
@@ -97,23 +100,28 @@
         <div class="owl-carousel features-carousel">
           <div class="feature-item">
             <div class="icon"><i class="fas fa-columns"></i></div>
-            <h3>Friendly Organizer</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit</p>
+            <h3>Organizador amigable</h3>
+            <p>Organiza tus tareas de la forma mas facil y amigable.</p>
+          </div>
+          <div class="feature-item">
+            <div class="icon"><i class="fas fa-book"></i></div>
+            <h3>Crea tus cursos </h3>
+            <p>Registra tus cursos para tener organizado tus tareas.</p>
           </div>
           <div class="feature-item">
             <div class="icon"><i class="fas fa-tasks"></i></div>
-            <h3>Make Tasks. Complete it.</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit,</p>
+            <h3>Administra tus tareas</h3>
+            <p>Crea tus tareas para hacerlas cuando tu quieras.</p>
           </div>
           <div class="feature-item">
             <div class="icon"><i class="fas fa-users"></i></div>
-            <h3>Make Groups</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit</p>
+            <h3>Crea grupo de estudios</h3>
+            <p>Puedes registrar a los integrantes de tu grupo.</p>
           </div>
           <div class="feature-item">
             <div class="icon"><i class="fas fa-check"></i></div>
-            <h3>fast load app</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit</p>
+            <h3>Carga rapida</h3>
+            <p>No pierdas tu tiempo en aplicaciones lentas.</p>
           </div>
       </div>
   </div>
@@ -131,32 +139,32 @@
       </div>
       <div class="col-lg-6 col-md-5">
         <div class="section-title">
-          <h2>fun <span>facts</span></h2>
+          <h2>Logros <span>obtenidos</span></h2>
         </div>
         <div class="fun-facts-text">
-          <p>Lorem ipsum dolor sit amet consectetur adipiscing elit, luctus fermentum nullam rhoncus faucibus vel, montes volutpat nibh nec venenatis blandit. Pharetra suspendisse montes nostra platea egestas aenean netus ligula facilisis, luctus conubia etiam eget lectus blandit natoque nisi phasellus fusce, velit nulla felis est dui orci vestibulum turpis.</p>
+          <p>Speedplanner se ha posicionado rápidamente dentro de las aplicaciones preferidas por los estudiantes de centros educativos para organizar sus tareas y actividades.</p>
           <div class="row">
             <div class="col-sm-6">
               <div class="fun-fact-item styles-1">
-                <h3>69000</h3>
+                <h3>100000</h3>
                 <span>descargas</span>
               </div>
             </div>
             <div class="col-sm-6">
               <div class="fun-fact-item styles-2">
-                <h3>1000</h3>
+                <h3>50000</h3>
                 <span>likes</span>
               </div>
             </div>
             <div class="col-sm-6">
               <div class="fun-fact-item styles-3">
-                <h3>700</h3>
+                <h3>7000</h3>
                 <span>5 start rating</span>
               </div>
             </div>
             <div class="col-sm-6">
               <div class="fun-fact-item styles-4">
-                <h3>1500</h3>
+                <h3>100</h3>
                 <span>awards</span>
               </div>
             </div>
@@ -169,7 +177,7 @@
 <!--Fun Facts Section End-->
 
 <!--App Screenshots Section Start-->
-<section class="app-screenshots section-padding">
+<section class="app-screenshots section-padding" data-scroll-index="2">
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-lg-8">
@@ -190,10 +198,10 @@
           <img src="img/app-screenshots/3.png" alt="sreenshot">
         </div>
         <div class="screenshot-item">
-          <img src="img/app-screenshots/1.png" alt="sreenshot">
+          <img src="img/app-screenshots/4.png" alt="sreenshot">
         </div>
         <div class="screenshot-item">
-          <img src="img/app-screenshots/2.png" alt="sreenshot">
+          <img src="img/app-screenshots/5.png" alt="sreenshot">
         </div>
       </div>
     </div>
@@ -202,8 +210,265 @@
 <!--App Screenshots Section end-->
 
 <!--App Download Section start-->
-
+<section class="app-download section-padding" data-scroll-index="3">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="section-title">
+          <h2>Download<span>App</span></h2>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-4 col-md-6">
+          <div class="app-download-item">
+            <i class="fab fa-google-play"></i>
+            <h3>Google PLay</h3>
+            <p>Speedplanner se encuentra disponible para todos los smartphones con sistema operativo Android. </p>
+            <a href="#" class="btn btn-2">Descargar</a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="app-download-item">
+            <i class="fab fa-apple"></i>
+            <h3>Apple Store</h3>
+            <p>Speedplanner se encuentra disponible para todos los smartphones con sistema operativo iOS. </p>
+            <a href="#" class="btn btn-2">Descargar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 <!--App Download Section end-->
+
+<!--How it works Section start-->
+<div class="how-it works section-padding">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="section-title">
+          <h2>¿Como funciona <span>Speedplanner?</span></h2>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-3 col-md-6">
+        <div class="how-it-works-item line-right">
+          <div class="step">1</div>
+          <h3>Download</h3>
+          <p>Primero descargas la app en tu dispositivo movil</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="how-it-works-item line-right">
+          <div class="step">2</div>
+          <h3>Create Profile</h3>
+          <p>Registrate en Speedplanner para acceder a las increibles funcionalidades</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="how-it-works-item line-right">
+          <div class="step">3</div>
+          <h3>Crea un Curso</h3>
+          <p>Crea un curso para registrar tus tareas</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="how-it-works-item">
+          <div class="step">4</div>
+          <h3>Crea una tarea</h3>
+          <p>Crea una nueva tarea y asignale un grupo</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--How it works Section end-->
+
+<!--Pricing section Start-->
+<section class="pricing section-padding" data-scroll-index="4">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="section-title">
+          <h2>Planes - <span>precios</span></h2>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-lg-4 col-md-6">
+        <div class="pricing-plan">
+          <div class="pricing-header">
+            <h3>Basico</h3>
+          </div>
+          <div class="pricing-price">
+            <span class="currency">$</span>
+            <span class="price">0</span>
+            <span class="period">/monthly</span>
+          </div>
+          <div class="pricing-body">
+            <ul>
+              <li><i class="fas fa-check"></i>5 cursos</li>
+              <li><i class="fas fa-check"></i>3 tareas por curso</li>
+              <li><i class="fas fa-check"></i>2 grupos por curso</li>
+            </ul>
+          </div>
+          <div class="pricing-footer">
+            <a href="#" data-scroll-goto="3" class="btn btn-2">Empezar</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="pricing-plan">
+          <div class="pricing-header">
+            <h3>Premium</h3>
+          </div>
+          <div class="pricing-price">
+            <span class="currency">$</span>
+            <span class="price">10</span>
+            <span class="period">/monthly</span>
+          </div>
+          <div class="pricing-body">
+            <ul>
+              <li><i class="fas fa-check"></i>Cursos ilimitados</li>
+              <li><i class="fas fa-check"></i>Tareas ilimitadas por curso</li>
+              <li><i class="fas fa-check"></i>Grupos ilimitados por curso</li>
+            </ul>
+          </div>
+          <div class="pricing-footer">
+            <a href="#" data-scroll-goto="3" class="btn btn-2">Empezar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--Pricing section end-->
+
+<!--Contact Section Start-->
+<section class="contact section-padding" data-scroll-index="5">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="section-title">
+          <h2>Contactanos</h2>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-4 col-md-5">
+        <div class="contact-info">
+          <h3>Para cualquier pregunta y dudas</h3>
+          <div class="contact-info-item">
+            <i class="fas fa-location-arrow"></i>
+            <h4>Locación de la compañia</h4>
+            <p>Surco 1541. Lima, Peru.</p>
+          </div>
+          <div class="contact-info-item">
+            <i class="fas fa-envelope"></i>
+            <h4>Escribenos a</h4>
+            <p>speedplanners  upport@gmail.com</p>
+          </div>
+          <div class="contact-info-item">
+            <i class="fas fa-phone"></i>
+            <h4>Llamanos al</h4>
+            <p>+51 901 451 420</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-8 col-md-7">
+        <div class="contact-form">
+          <form>
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="form-group">
+                  <input type="text" placeholder="Nombre y Apellidos" class="form-control">
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="form-group">
+                  <input type="text" placeholder="Tu correo" class="form-control">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="form group">
+                  <input type="text" placeholder="Tu numero celular" class="form-control">
+                </div>
+              </div>
+            </div>
+            <div class="row mt-3">
+              <div class="col-lg-12">
+                <div class="form group">
+                  <input type="text" placeholder="Asunto" class="form-control">
+                </div>
+              </div>
+            </div>
+            <div class="row mt-3">
+              <div class="col-lg-12">
+                <div class="form group">
+                  <textarea placeholder="Escribe tu mensaje aqui" class="form-control"></textarea>
+                </div>
+              </div>
+            </div>
+            <div class="row mt-3">
+              <div class="col-lg-12">
+                <div class="form group">
+                  <button type = "submit" class="btn btn-1">Enviar</button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--Contact section End-->
+
+<!--Footer Start-->
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 col-md-6">
+        <div class="footer-col">
+          <h3>FasTech</h3>
+          <p>Empresa dedicada a brindar software de alta calidad con la finalidad de optimizar procesos complejos, tediosos o ineficientes para otras empresas</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="footer-col">
+          <h4>Speedplanner es una marca registrada. © 2021.</h4>
+          <ul>
+            <li><a href="#">Cookies</a></li>
+            <li><a href="#">Politica de privacidad</a></li>
+            <li><a href="#">Aviso legal</a></li>
+            <li><a href="#">Terminos y condiciones</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="footer-col">
+          <h3>Redes Sociales</h3>
+          <ul>
+            <li><a href="#">Faceebook</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">linkedin</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-8">
+        <div class="footer-col">
+          <h3>GRACIAS POR TU VISITA</h3> 
+          <h3>¡HASTA PRONTO!</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<!--Footer End-->
 
 <!--Video popup start -->
 <div class="video-popup">
