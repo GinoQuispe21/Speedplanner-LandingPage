@@ -152,8 +152,8 @@ ul{
 }
 /*---Navbar---*/
 .navbar-img{
-    height: 60%;
-    width: 40%;
+    height: 50%;
+    width: 50%;
 }
 .navbar{
     background-color: var(--main-color);
@@ -769,10 +769,6 @@ ul{
 Responsive
 ---------------------------------------- */
 @media (max-width: 991px) {
-    .navbar-img{
-        height: 80%;
-        width: 80%;
-    }
     .navbar-toggler{
         background-color: var(--dark-to-main-color);
         box-shadow: var( --shadow-black-300);
